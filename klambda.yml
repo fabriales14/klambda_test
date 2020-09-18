@@ -1,16 +1,16 @@
 lambdas:
-# example of using function of library
-- callView:
+- fibonacci:
+    author: falvarado
+- print:
     author: falvarado
 project:
-  author: username
+  author: <your-username>
   description: description
   files:
   - /klambda.yml
   - /user.yml
   - /serverless.yml
-  name: project-name
-  repo_url: url-repo
+  name: <project-test>
+  repo_url: repo-link
   users:
-  - user1
-  - user2
+  - falvarado

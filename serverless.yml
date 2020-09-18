@@ -1,0 +1,21 @@
+service: test-service
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+functions:
+  fibonacci:
+    handler: fibonacci/fibonacci.handler
+    description: fibonacci of number
+    events:
+      - httpApi:
+          method: GET
+          path: /fibonacci/{number}
+  print:
+    handler: print/print.handler
+    events:
+      - httpApi: 
+          method: POST
+          path: /print
+          
