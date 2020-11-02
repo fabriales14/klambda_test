@@ -1,16 +1,37 @@
 lambdas:
 - fibonacci:
     author: falvarado
+    category: mathematical
+    checksum: 52b5b3205af87b80d43fb32abe43db80
+    created_on: '2020-09-11 12:14:08'
+    description: returns the fibonacci sequence of a given number
+    folder_path: /fibonacci
+    last_update: '2020-10-01 21:08:19'
+    name: fibonacci
+    repo_url: https://github.com/fabriales14/klambda-functions
+    runtime: nodejs
+    version: '1.0'
 - print:
     author: falvarado
+    category: functional
+    checksum: 252b021ab0d21ef0b70eb5df4bb9196a
+    created_on: '2020-09-15 14:16:08'
+    description: returns the input message
+    folder_path: /print
+    last_update: '2020-10-01 21:08:20'
+    name: print
+    repo_url: https://github.com/fabriales14/klambda-functions
+    runtime: nodejs
+    version: '1.0'
 project:
-  author: <your-username>
+  author: falvarado
   description: description
   files:
   - /klambda.yml
   - /user.yml
   - /serverless.yml
-  name: <project-test>
+  name: my-project
   repo_url: repo-link
   users:
-  - falvarado
+  - rquesadah
+  - rnunez

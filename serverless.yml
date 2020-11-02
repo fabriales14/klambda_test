@@ -1,4 +1,4 @@
-service: test-service
+service: klambda-service
 provider:
   name: aws
   runtime: nodejs12.x
@@ -9,13 +9,13 @@ functions:
     handler: fibonacci/fibonacci.handler
     description: fibonacci of number
     events:
-      - httpApi:
-          method: GET
-          path: /fibonacci/{number}
+      - http:
+          path: fibonacci/{number}
+          method: get
   print:
     handler: print/print.handler
     events:
-      - httpApi: 
-          method: POST
-          path: /print
+      - http: 
+          path: print
+          method: post
           
